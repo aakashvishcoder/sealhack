@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq0vngmhgch8q"]
+
+[ext_resource type="Texture2D" uid="uid://b5jc1hjib2qlh" path="res://starfield/Adobe Express - file (2).png" id="1_qrutf"]
+
+[sub_resource type="Curve" id="Curve_u2lq0"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.25000003, 1), 0.0, 0.0, 0, 0, Vector2(0.4941861, 0.011235952), 0.0, 0.0, 0, 0, Vector2(0.75000006, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.011235952), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[node name="Starfield" type="Node2D"]
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2(354, 572)
+texture = ExtResource("1_qrutf")
+lifetime = 6.0
+preprocess = 6.0
+gravity = Vector2(0, 0)
+angular_velocity_max = 50.0
+scale_amount_curve = SubResource("Curve_u2lq0")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(265, 263)
+texture = ExtResource("1_qrutf")
+lifetime = 6.0
+preprocess = 6.0
+gravity = Vector2(0, 0)
+angular_velocity_max = 50.0
+scale_amount_curve = SubResource("Curve_u2lq0")
