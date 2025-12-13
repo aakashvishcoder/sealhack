@@ -1,39 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn4q4w63ip474"]
+[gd_scene load_steps=2 format=3 uid="uid://dn4q4w63ip474"]
 
-[ext_resource type="Script" uid="uid://cvwed1d0n7xlh" path="res://terminal/question.gd" id="1_l3hco"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amys7"]
-bg_color = Color(1, 1, 1, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.5540639, 0.87021834, 0.82626235, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+[ext_resource type="Script" uid="uid://dxibu4wtj3el1" path="res://terminal/terminal.gd" id="1_l3hco"]
 
 [node name="Terminal" type="Node2D"]
 position = Vector2(605, 569)
-
-[node name="Button" type="Button" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -7.0
-offset_right = 12.0
-offset_bottom = 7.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.6288066, 0.9469066, 0.8957311, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_amys7")
-text = "submit"
-metadata/_edit_use_anchors_ = true
+script = ExtResource("1_l3hco")
+main_scene_file_path = "res://terminal/terminal.tscn"
+clue_scene_file_path = "res://starfield/starfield.tscn"
 
 [node name="Button2" type="Button" parent="."]
 offset_left = -450.0
@@ -48,7 +21,6 @@ offset_top = -569.0
 offset_right = 547.0
 offset_bottom = -344.0
 text = "Dasjdioajsiodjoiajsodj"
-script = ExtResource("1_l3hco")
 
 [node name="Button3" type="Button" parent="."]
 offset_left = -448.0
@@ -70,3 +42,8 @@ offset_top = -175.0
 offset_right = 404.38464
 offset_bottom = -87.0
 text = "Answer Choice 1"
+
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_button_4_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
