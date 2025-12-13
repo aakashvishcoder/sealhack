@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://dmdb2mk6xhv6d"]
+[gd_scene load_steps=2 format=3 uid="uid://dmdb2mk6xhv6d"]
+
+[ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1151.0
+offset_bottom = 648.0
+texture = ExtResource("1_jwv3a")
