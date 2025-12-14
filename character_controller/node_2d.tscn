@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=4 uid="uid://oj72yckt2eps"]
 
-[ext_resource type="Script" uid="uid://djuntn1hlm6so" path="res://character_body_2d.gd" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://dvk2ecybothqh" path="res://guitside.png" id="1_wtcfe"]
-[ext_resource type="Texture2D" uid="uid://cr1ptepfalbj7" path="res://icon.svg" id="3_epypp"]
-[ext_resource type="Texture2D" uid="uid://cy02acekjcnk0" path="res://133536268704078752.jpg" id="4_0hol4"]
-[ext_resource type="Script" uid="uid://de4dpqfnxl4nr" path="res://terminal_Script.gd" id="4_q6r6c"]
+[ext_resource type="Script" uid="uid://djuntn1hlm6so" path="res://character_controller/character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://dvk2ecybothqh" path="res://character_controller/guitside.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://cr1ptepfalbj7" path="res://character_controller/icon.svg" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://cy02acekjcnk0" path="res://character_controller/133536268704078752.jpg" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://de4dpqfnxl4nr" path="res://character_controller/terminal_Script.gd" id="4_q6r6c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 resource_name = "default"
@@ -181,6 +181,7 @@ z_index = -1
 position = Vector2(944, 444.00003)
 scale = Vector2(6.6800003, 5.12)
 script = ExtResource("4_q6r6c")
+terminal_path = "res://terminal/terminal.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_q6r6c")
