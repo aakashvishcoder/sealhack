@@ -39,6 +39,7 @@ text = "enter your text here
 placeholder_text = "enter your text here"
 backspace_deletes_composite_character_enabled = true
 script = ExtResource("1_pf3bh")
+level_finished_scene = "res://character_controller/node_2d.tscn"
 
 [node name="Button" type="Button" parent="."]
 offset_right = 8.0
