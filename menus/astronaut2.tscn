@@ -40,5 +40,4 @@ autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D+2"]
 position = Vector2(-50.2069, 2.01661)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_qbnvs")

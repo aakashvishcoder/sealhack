@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dmdb2mk6xhv6d"]
+[gd_scene load_steps=26 format=3 uid="uid://dmdb2mk6xhv6d"]
 
 [ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
 [ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://Terrain (16x16).png" id="2_dopym"]
@@ -192,6 +192,21 @@ size = Vector2(45, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3l65w"]
 size = Vector2(45, 8)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjtee"]
+size = Vector2(28, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1idop"]
+size = Vector2(27, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_beq0j"]
+size = Vector2(29, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nauge"]
+size = Vector2(29, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycv2e"]
+size = Vector2(28, 7)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -271,13 +286,21 @@ position = Vector2(-505, -158)
 shape = SubResource("RectangleShape2D_3l65w")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-673, -141.5)
+shape = SubResource("RectangleShape2D_rjtee")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-721.5, -286)
+shape = SubResource("RectangleShape2D_1idop")
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-913.5, -334)
+shape = SubResource("RectangleShape2D_beq0j")
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-385.5, -382)
+shape = SubResource("RectangleShape2D_nauge")
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D+1"]
-
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-193, -429.5)
+shape = SubResource("RectangleShape2D_ycv2e")
