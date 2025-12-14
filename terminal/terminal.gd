@@ -5,7 +5,10 @@ extends Node2D
 @export var clue_scene_file_path: String = ""
 
 var question_list = {}
-var file_path = main_scene_file_path
+var file_path_1 = main_scene_file_path
+var file_path_2 = main_scene_file_path
+var file_path_3 = main_scene_file_path
+var file_path_4 = main_scene_file_path
 var random_index: int = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -15,23 +18,17 @@ func _ready() -> void:
 	export_question()
 	var correct_answer: int = question_list["correct_answer"][random_index]
 	export_clue()
-	print(clue_scene_file_path)
 	match correct_answer:
 		1:
-			file_path = clue_scene_file_path
-			print("button 2")
+			file_path_1 = clue_scene_file_path
 		2:
-			file_path = clue_scene_file_path
-			print("button 3")
+			file_path_2 = clue_scene_file_path
 		3:
-			file_path = clue_scene_file_path
-			print("button 4")
+			file_path_3 = clue_scene_file_path
 		4:
-			file_path = 'clue_scene_file_path'
-			print("button 5")
+			file_path_4 = clue_scene_file_path
 		_:
 			print("No answer detected")
-	print(random_index)
 	pass # Replace with function body.
 
 func load_json_file():
@@ -55,28 +52,24 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_button_2_button_down() -> void:
-	print("button 2 pressed")
-	if file_path == clue_scene_file_path:
+	if file_path_1 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
-	get_tree().change_scene_to_file(file_path)
+	get_tree().change_scene_to_file(file_path_1)
 
 func _on_button_3_button_down() -> void:
-	print("button 3 pressed")
-	if file_path == clue_scene_file_path:
+	if file_path_2 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
-	get_tree().change_scene_to_file(file_path)
+	get_tree().change_scene_to_file(file_path_2)
 
 func _on_button_4_button_down() -> void:
-	print("button 4 pressed")
-	if file_path == clue_scene_file_path:
+	if file_path_3 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
-	get_tree().change_scene_to_file(file_path)
+	get_tree().change_scene_to_file(file_path_3)
 
 func _on_button_5_button_down() -> void:
-	print("button 5 pressed")
-	if file_path == clue_scene_file_path:
+	if file_path_4 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
-	get_tree().change_scene_to_file(file_path)
+	get_tree().change_scene_to_file(file_path_4)
 
 # exporting the clue to the clue scene
 func export_clue() -> void:
