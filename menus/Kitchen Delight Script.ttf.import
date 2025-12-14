@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://mp0nq2glwr6f"
-path="res://.godot/imported/Kitchen Delight Script.ttf-066d5705391cae18034bdbde580b7127.fontdata"
+path="res://.godot/imported/Kitchen Delight Script.ttf-b830260cbee20d6acf542259121e81a8.fontdata"
 
 [deps]
 
-source_file="res://Kitchen Delight Script.ttf"
-dest_files=["res://.godot/imported/Kitchen Delight Script.ttf-066d5705391cae18034bdbde580b7127.fontdata"]
+source_file="res://menus/Kitchen Delight Script.ttf"
+dest_files=["res://.godot/imported/Kitchen Delight Script.ttf-b830260cbee20d6acf542259121e81a8.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true
