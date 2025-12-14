@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbq1374eb26so"]
+[gd_scene load_steps=11 format=3 uid="uid://dbq1374eb26so"]
 
 [ext_resource type="Texture2D" uid="uid://b5itrsiwl65u4" path="res://New Piskel (2).png" id="1_gtphq"]
+[ext_resource type="Script" uid="uid://b015xhlsy8yog" path="res://area_2d+2.gd" id="2_l76db"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l76db"]
 atlas = ExtResource("1_gtphq")
@@ -27,6 +28,31 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gtphq"]
 size = Vector2(8.91296, 32.9572)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtphq"]
+atlas = ExtResource("1_gtphq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pw13x"]
+atlas = ExtResource("1_gtphq")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6cnut"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtphq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pw13x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l76db"]
+size = Vector2(8.91525, 35.6992)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -42,3 +68,19 @@ frame_progress = 0.161515
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D+2"]
 position = Vector2(-22.1277, -0.0695926)
 shape = SubResource("RectangleShape2D_gtphq")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-393, -159)
+scale = Vector2(1.84375, 1.92187)
+sprite_frames = SubResource("SpriteFrames_6cnut")
+autoplay = "default"
+frame = 1
+frame_progress = 0.4248
+
+[node name="Area2D+2" type="Area2D" parent="AnimatedSprite2D2"]
+script = ExtResource("2_l76db")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D2/Area2D+2"]
+position = Vector2(11.8136, -1.40244)
+shape = SubResource("RectangleShape2D_l76db")
