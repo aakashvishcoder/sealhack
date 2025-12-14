@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmdb2mk6xhv6d"]
+[gd_scene load_steps=21 format=3 uid="uid://dmdb2mk6xhv6d"]
 
 [ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
 [ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://Terrain (16x16).png" id="2_dopym"]
 [ext_resource type="Texture2D" uid="uid://dk2qoq5l8tqjj" path="res://Idle.png" id="3_ootpb"]
 [ext_resource type="FontFile" uid="uid://c1fufy63gjsik" path="res://Black Slider.ttf" id="4_v38iq"]
 [ext_resource type="PackedScene" uid="uid://nso3bmjv72x5" path="res://enemies.tscn" id="5_v8kj3"]
+[ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://astronaut.tscn" id="6_crycw"]
+[ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://astronaut2.tscn" id="7_i2041"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ootpb"]
 texture = ExtResource("2_dopym")
@@ -163,6 +165,33 @@ texture = ExtResource("3_ootpb")
 [sub_resource type="TileSet" id="TileSet_v8kj3"]
 sources/0 = SubResource("TileSetAtlasSource_v38iq")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2041"]
+size = Vector2(30, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xy4tn"]
+size = Vector2(109, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_usj0q"]
+size = Vector2(14, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5j5gb"]
+size = Vector2(12, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mx85b"]
+size = Vector2(638, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx44q"]
+size = Vector2(108, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8vhr"]
+size = Vector2(43, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqrsh"]
+size = Vector2(45, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3l65w"]
+size = Vector2(45, 8)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -195,3 +224,60 @@ text = "No entry "
 
 [node name="Node2D" parent="." instance=ExtResource("5_v8kj3")]
 position = Vector2(239, 576)
+
+[node name="Node2D2" parent="." instance=ExtResource("6_crycw")]
+position = Vector2(561, 513)
+
+[node name="Node2D3" parent="." instance=ExtResource("7_i2041")]
+position = Vector2(929, 539)
+
+[node name="Area2D+1" type="Area2D" parent="."]
+position = Vector2(929, 539)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-818, 49)
+shape = SubResource("RectangleShape2D_i2041")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-761.5, 97.5)
+shape = SubResource("RectangleShape2D_xy4tn")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-522, 1)
+shape = SubResource("RectangleShape2D_usj0q")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-410, 3.5)
+shape = SubResource("RectangleShape2D_5j5gb")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-96, 97.5)
+shape = SubResource("RectangleShape2D_mx85b")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(167, -110.5)
+shape = SubResource("RectangleShape2D_hx44q")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(166.5, -125)
+shape = SubResource("RectangleShape2D_n8vhr")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-329.5, -158)
+shape = SubResource("RectangleShape2D_eqrsh")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(-505, -158)
+shape = SubResource("RectangleShape2D_3l65w")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D+1"]
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D+1"]
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Area2D+1"]
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Area2D+1"]
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D+1"]
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D+1"]
