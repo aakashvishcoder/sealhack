@@ -15,6 +15,7 @@ extends CharacterBody2D
 #cooldown for dash
 @export var dashCooldown = 500.0
 
+#for movement
 
 #keeps track of time in air
 var jumpTimer = 0
@@ -26,6 +27,13 @@ var currentHorizontalSpeed = baseHorizontalSpeed
 var dashTimer = 0
 #keeps track of time since last dash (for cooldown)
 var dashCurrentCooldown = 0
+
+#for areas
+
+#keeps track if its an area 2D
+#var inArea = false
+#The area it is colliding with (always check inArea before using this variable)
+#var collidingArea: Node2D
 
 func _physics_process(delta: float) -> void:
 	
@@ -84,3 +92,6 @@ func _physics_process(delta: float) -> void:
 		
 
 	move_and_slide()
+
+#func _process(delta: float) -> void:
+	
