@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://qrdb4pixg6uu"
-path="res://.godot/imported/Evil Empire.otf-18497c44b2e9ebd8e7a4842764c23822.fontdata"
+path="res://.godot/imported/Evil Empire.otf-9c21405895c88dbec625196d17fdad5b.fontdata"
 
 [deps]
 
-source_file="res://Evil Empire.otf"
-dest_files=["res://.godot/imported/Evil Empire.otf-18497c44b2e9ebd8e7a4842764c23822.fontdata"]
+source_file="res://menus/Evil Empire.otf"
+dest_files=["res://.godot/imported/Evil Empire.otf-9c21405895c88dbec625196d17fdad5b.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

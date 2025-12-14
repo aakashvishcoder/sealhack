@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d1gnibhfb2ueb"
-path="res://.godot/imported/Telematic-BL5aV - Copy.ttf-d4619e8df60e4fd0b564113dbdb8e832.fontdata"
+path="res://.godot/imported/Telematic-BL5aV - Copy.ttf-36436f32d07e2aa4f73315eb4756e1d5.fontdata"
 
 [deps]
 
-source_file="res://Telematic-BL5aV - Copy.ttf"
-dest_files=["res://.godot/imported/Telematic-BL5aV - Copy.ttf-d4619e8df60e4fd0b564113dbdb8e832.fontdata"]
+source_file="res://menus/Telematic-BL5aV - Copy.ttf"
+dest_files=["res://.godot/imported/Telematic-BL5aV - Copy.ttf-36436f32d07e2aa4f73315eb4756e1d5.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true
