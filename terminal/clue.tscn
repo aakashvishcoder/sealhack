@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4kssn1haa3qp"]
+
+[ext_resource type="Script" uid="uid://bk0w5lsl2h67" path="res://terminal/clue.gd" id="1_pog6f"]
+
+[node name="Clue" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 444.0
+offset_top = 239.0
+offset_right = 782.0
+offset_bottom = 397.0
+script = ExtResource("1_pog6f")

@@ -1,12 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dn4q4w63ip474"]
+[gd_scene load_steps=3 format=3 uid="uid://dn4q4w63ip474"]
 
 [ext_resource type="Script" uid="uid://dxibu4wtj3el1" path="res://terminal/terminal.gd" id="1_l3hco"]
+[ext_resource type="Script" uid="uid://cvwed1d0n7xlh" path="res://terminal/question.gd" id="2_cgvah"]
 
 [node name="Terminal" type="Node2D"]
 position = Vector2(605, 569)
 script = ExtResource("1_l3hco")
 main_scene_file_path = "res://terminal/terminal.tscn"
-clue_scene_file_path = "res://starfield/starfield.tscn"
+clue_scene_file_path = "res://terminal/clue.tscn"
 
 [node name="Button2" type="Button" parent="."]
 offset_left = -450.0
@@ -21,6 +22,7 @@ offset_top = -569.0
 offset_right = 547.0
 offset_bottom = -344.0
 text = "Dasjdioajsiodjoiajsodj"
+script = ExtResource("2_cgvah")
 
 [node name="Button3" type="Button" parent="."]
 offset_left = -448.0
