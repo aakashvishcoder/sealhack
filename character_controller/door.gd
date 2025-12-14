@@ -4,7 +4,7 @@ extends Area2D
 var collidingWithPlayer = false
 
 func on_Player_Collide():
-	if Input.is_action_just_pressed("open Terminal"):
+	if Input.is_action_just_pressed("open Terminal") and Global.number_of_terminals == 0:
 		print("opened the terminal")
 
 func _on_area_2d_area_entered(area: Area2D) -> void:

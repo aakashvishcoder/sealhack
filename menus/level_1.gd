@@ -1,12 +1,8 @@
-extends Node
-
-var clue: String = ""
-var random_index: int = 0
-var question: String = ""
-var number_of_terminals: int = 0
+extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Global.number_of_terminals = 4
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
