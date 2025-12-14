@@ -1,10 +1,13 @@
 extends Area2D
 
+@export var level_path: String = ""
+
 #keeps track of when player is colliding with it
 var collidingWithPlayer = false
 
 func on_Player_Collide():
 	if Input.is_action_just_pressed("open Terminal") and Global.number_of_terminals == 0:
+		get_tree().change_scene_to_file(level_path)
 		print("opened the terminal")
 
 func _on_area_2d_area_entered(area: Area2D) -> void:

@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj2sqsrfqhkh1"]
+
+[ext_resource type="Script" uid="uid://d0iewgmgrmb0f" path="res://padlock/password.gd" id="1_pf3bh"]
+
+[sub_resource type="GDScript" id="GDScript_k06p4"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6eury"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="PadlockScene" type="Node2D"]
+script = SubResource("GDScript_k06p4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -1.0
+offset_right = 1152.0
+offset_bottom = 136.0
+theme_override_font_sizes/normal_font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6eury")
+text = "Using the clues, create unscramble the letters to create a word!"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_top = 141.0
+offset_right = 1153.0
+offset_bottom = 342.0
+text = "enter your text here
+"
+placeholder_text = "enter your text here"
+backspace_deletes_composite_character_enabled = true
+script = ExtResource("1_pf3bh")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Submit"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="TextEdit" method="_on_button_button_down"]
