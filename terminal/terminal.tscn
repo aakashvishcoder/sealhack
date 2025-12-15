@@ -7,7 +7,7 @@
 position = Vector2(605, 569)
 script = ExtResource("1_l3hco")
 main_scene_file_path = "res://character_controller/node_2d.tscn"
-clue_scene_file_path = "res://character_controller/node_2d.tscn"
+clue_scene_file_path = "res://terminal/clue.tscn"
 
 [node name="Button2" type="Button" parent="."]
 offset_left = -450.0
