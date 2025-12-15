@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://or4fwm8yd1ka"
+uid="uid://b2cjbnfe32npy"
 path="res://.godot/imported/LegacyCyborg2Condense-G3B4q.otf-97bf3ff1401970773ea149413a71ade2.fontdata"
 
 [deps]
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

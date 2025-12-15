@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://q3h3frc87nrm"
+uid="uid://dv4n3l067a1w4"
 path="res://.godot/imported/American Captain.ttf-ef0c7c85b380bc4e52382c5a680553de.fontdata"
 
 [deps]
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

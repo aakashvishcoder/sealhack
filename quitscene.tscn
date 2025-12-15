@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2dhxhv1vcta4"]
+[gd_scene load_steps=10 format=3 uid="uid://df1p30lipdsgd"]
 
 [ext_resource type="Script" uid="uid://ds2rpdr7g3hld" path="res://quitscene.gd" id="1_6g6c1"]
 [ext_resource type="FontFile" uid="uid://q3h3frc87nrm" path="res://American Captain.ttf" id="1_o2a2x"]
