@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dbq1374eb26so"]
 
-[ext_resource type="Texture2D" uid="uid://b5itrsiwl65u4" path="res://New Piskel (2).png" id="1_gtphq"]
-[ext_resource type="Script" uid="uid://b015xhlsy8yog" path="res://area_2d+2.gd" id="2_l76db"]
+[ext_resource type="Texture2D" uid="uid://b5itrsiwl65u4" path="res://menus/New Piskel (2).png" id="1_gtphq"]
+[ext_resource type="Script" uid="uid://b015xhlsy8yog" path="res://menus/area_2d+2.gd" id="2_l76db"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l76db"]
 atlas = ExtResource("1_gtphq")
