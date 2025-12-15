@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://btolsrv7itynn"
-path="res://.godot/imported/NauSea-yeMm.ttf-40e7376e848f0520068d08f442a5afcd.fontdata"
+path="res://.godot/imported/NauSea-yeMm.ttf-0199aa5c2b31de50e2d823c4c73c940d.fontdata"
 
 [deps]
 
-source_file="res://NauSea-yeMm.ttf"
-dest_files=["res://.godot/imported/NauSea-yeMm.ttf-40e7376e848f0520068d08f442a5afcd.fontdata"]
+source_file="res://menus/NauSea-yeMm.ttf"
+dest_files=["res://.godot/imported/NauSea-yeMm.ttf-0199aa5c2b31de50e2d823c4c73c940d.fontdata"]
 
 [params]
 

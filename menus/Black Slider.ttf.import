@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c1fufy63gjsik"
-path="res://.godot/imported/Black Slider.ttf-5eddc9251e622d6f6ecee615541175a0.fontdata"
+path="res://.godot/imported/Black Slider.ttf-af156b6655c57ac5319a5a2cf0662bfa.fontdata"
 
 [deps]
 
-source_file="res://Black Slider.ttf"
-dest_files=["res://.godot/imported/Black Slider.ttf-5eddc9251e622d6f6ecee615541175a0.fontdata"]
+source_file="res://menus/Black Slider.ttf"
+dest_files=["res://.godot/imported/Black Slider.ttf-af156b6655c57ac5319a5a2cf0662bfa.fontdata"]
 
 [params]
 

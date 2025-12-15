@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://q3h3frc87nrm"
-path="res://.godot/imported/American Captain.ttf-ef0c7c85b380bc4e52382c5a680553de.fontdata"
+path="res://.godot/imported/American Captain.ttf-287b3ed404e3f8f69ffdb0f0901f09f6.fontdata"
 
 [deps]
 
-source_file="res://American Captain.ttf"
-dest_files=["res://.godot/imported/American Captain.ttf-ef0c7c85b380bc4e52382c5a680553de.fontdata"]
+source_file="res://menus/American Captain.ttf"
+dest_files=["res://.godot/imported/American Captain.ttf-287b3ed404e3f8f69ffdb0f0901f09f6.fontdata"]
 
 [params]
 

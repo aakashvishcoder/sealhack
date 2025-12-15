@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vfgcohy3dr1l"
-path="res://.godot/imported/space seal.png-2ec4cc723ee332e5b4795b7f17621e3f.ctex"
+path="res://.godot/imported/space seal.png-943da850cdc13afb2bd16a8864dbe2f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://space seal.png"
-dest_files=["res://.godot/imported/space seal.png-2ec4cc723ee332e5b4795b7f17621e3f.ctex"]
+source_file="res://menus/space seal.png"
+dest_files=["res://.godot/imported/space seal.png-943da850cdc13afb2bd16a8864dbe2f1.ctex"]
 
 [params]
 

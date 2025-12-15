@@ -1,10 +1,4 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [gd_scene load_steps=26 format=3 uid="uid://dmdb2mk6xhv6d"]
-=======
-[gd_scene load_steps=27 format=3 uid="uid://dmdb2mk6xhv6d"]
->>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
 [ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://Terrain (16x16).png" id="2_dopym"]
@@ -13,11 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://nso3bmjv72x5" path="res://enemies.tscn" id="5_v8kj3"]
 [ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://astronaut.tscn" id="6_crycw"]
 [ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://astronaut2.tscn" id="7_i2041"]
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 [gd_scene load_steps=34 format=3 uid="uid://dmdb2mk6xhv6d"]
+
+[gd_scene load_steps=30 format=3 uid="uid://dmdb2mk6xhv6d"]
+
 
 [ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://menus/space.png" id="1_jwv3a"]
 [ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://menus/Terrain (16x16).png" id="2_dopym"]
@@ -31,13 +24,14 @@
 [ext_resource type="Script" uid="uid://g8wmhg0w5mx4" path="res://menus/area_2d+3.gd" id="9_f52xe"]
 [ext_resource type="Script" uid="uid://djuntn1hlm6so" path="res://character_controller/character_body_2d.gd" id="11_h8w52"]
 [ext_resource type="Texture2D" uid="uid://dvk2ecybothqh" path="res://character_controller/guitside.png" id="12_0gte2"]
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
+
 [ext_resource type="Texture2D" uid="uid://crxfvj2f3aroq" path="res://door.png" id="8_xy4tn"]
->>>>>>> Stashed changes
+
+[ext_resource type="Script" uid="uid://dxibu4wtj3el1" path="res://terminal/terminal.gd" id="6_2w1tt"]
+[ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://menus/astronaut.tscn" id="6_crycw"]
+[ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://menus/astronaut2.tscn" id="7_i2041"]
+[ext_resource type="Script" uid="uid://bwo1j8qc6efxk" path="res://menus/area_2d+1.gd" id="8_5vlv3"]
+[ext_resource type="Script" uid="uid://g8wmhg0w5mx4" path="res://menus/area_2d+3.gd" id="9_f52xe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ootpb"]
 texture = ExtResource("2_dopym")
@@ -238,21 +232,9 @@ size = Vector2(29, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycv2e"]
 size = Vector2(28, 7)
 
-<<<<<<< Updated upstream
-=======
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tj4i1"]
 size = Vector2(34, 90)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3od0r"]
-size = Vector2(20, 81.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yai6m"]
-size = Vector2(3.95349, 81.5)
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -283,15 +265,10 @@ theme_override_fonts/font = ExtResource("4_v38iq")
 theme_override_font_sizes/font_size = 55
 text = "No entry "
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="Node2D" parent="." instance=ExtResource("5_v8kj3")]
 position = Vector2(239, 576)
+script = ExtResource("6_2w1tt")
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 [node name="Node2D2" parent="." instance=ExtResource("6_crycw")]
 position = Vector2(561, 513)
 script = ExtResource("6_h8w52")
@@ -302,6 +279,7 @@ script = ExtResource("6_h8w52")
 
 [node name="Area2D+1" type="Area2D" parent="."]
 position = Vector2(929, 539)
+script = ExtResource("8_5vlv3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D+1"]
 position = Vector2(-818, 49)
@@ -358,9 +336,6 @@ shape = SubResource("RectangleShape2D_nauge")
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D+1"]
 position = Vector2(-193, -429.5)
 shape = SubResource("RectangleShape2D_ycv2e")
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
 [node name="Area2D+3" type="Area2D" parent="."]
 position = Vector2(929, 539)
@@ -392,14 +367,9 @@ shape = SubResource("RectangleShape2D_yai6m")
 
 [node name="Node2D" parent="." instance=ExtResource("5_v8kj3")]
 position = Vector2(251, 575)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 
 [node name="Door" type="Sprite2D" parent="."]
 position = Vector2(1112, 79.625)
 scale = Vector2(0.318471, 0.207944)
 texture = ExtResource("8_xy4tn")
->>>>>>> Stashed changes
+

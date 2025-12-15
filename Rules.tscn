@@ -1,0 +1,110 @@
+[gd_scene load_steps=13 format=3 uid="uid://d20l6nrjnfehg"]
+
+[ext_resource type="Script" uid="uid://crw3a25jgt23v" path="res://rules.gd" id="1_eojom"]
+[ext_resource type="FontFile" uid="uid://btolsrv7itynn" path="res://NauSea-yeMm.ttf" id="1_fcngl"]
+[ext_resource type="Texture2D" uid="uid://cmsk4ahthy04u" path="res://menus/menu 8.png" id="2_7oqms"]
+[ext_resource type="FontFile" uid="uid://q3h3frc87nrm" path="res://American Captain.ttf" id="2_ag8e4"]
+[ext_resource type="FontFile" uid="uid://mp0nq2glwr6f" path="res://Kitchen Delight Script.ttf" id="3_ag8e4"]
+[ext_resource type="Texture2D" uid="uid://b1mo2vyburhf1" path="res://menus/menu 7.png" id="3_tupmy"]
+[ext_resource type="Texture2D" uid="uid://ejnfab7bsgog" path="res://menus/menu 6.png" id="4_s18i4"]
+[ext_resource type="FontFile" uid="uid://d1gnibhfb2ueb" path="res://menus/Telematic-BL5aV - Copy.ttf" id="4_tu520"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d2ebc"]
+texture = ExtResource("2_7oqms")
+modulate_color = Color(0.505344, 0.505344, 0.505344, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rg21y"]
+texture = ExtResource("3_tupmy")
+modulate_color = Color(0.581033, 0.581033, 0.581033, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8c5sk"]
+texture = ExtResource("4_s18i4")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8jhf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.8, 0.368627, 0.8, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_eojom")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 800.0
+offset_right = 1153.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_d2ebc")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 380.0
+offset_right = 800.0
+offset_bottom = 647.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_rg21y")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_right = 380.0
+offset_bottom = 647.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8c5sk")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 89.0
+offset_right = 1080.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.954689, 0.285745, 0.495956, 1)
+theme_override_fonts/font = ExtResource("1_fcngl")
+theme_override_font_sizes/font_size = 34
+text = "Ready to play??? FIRST, you're going to wanna know how"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 80.0
+offset_top = 141.0
+offset_right = 197.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(0.453702, 0.48388, 4.81307e-07, 1)
+theme_override_fonts/font = ExtResource("2_ag8e4")
+theme_override_font_sizes/font_size = 60
+text = "RULES / HOW TO PLAY"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 90.0
+offset_top = 207.0
+offset_right = 830.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0.975313, 0.00339565, 0.00186324, 1)
+theme_override_fonts/font = ExtResource("3_ag8e4")
+theme_override_font_sizes/font_size = 30
+text = "-Press A and D in order for your player to move left and right
+-Press W to jump
+- Press Shift to dash
+-You will be going through the level and avoiding enemies as well.
+-You will be meeting astronauts who will give you a question, which if you answer right, you will pass through
+-You will fight the final boss, The space seal in the end, played by another player.
+Good luck!"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 681.0
+offset_top = 491.0
+offset_right = 1125.0
+offset_bottom = 620.0
+theme_override_colors/font_disabled_color = Color(0.796078, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.745098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.784314, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0.713726, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.741176, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.756863, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.745098, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.756863, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.796078, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.772549, 0, 0, 1)
+theme_override_colors/font_color = Color(0.764706, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.741176, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.658824, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_tu520")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_h8jhf")
+text = "Main menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

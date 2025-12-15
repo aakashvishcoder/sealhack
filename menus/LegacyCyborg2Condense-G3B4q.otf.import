@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://or4fwm8yd1ka"
-path="res://.godot/imported/LegacyCyborg2Condense-G3B4q.otf-97bf3ff1401970773ea149413a71ade2.fontdata"
+path="res://.godot/imported/LegacyCyborg2Condense-G3B4q.otf-a64bc4ed433972a6e53b9d34947372e6.fontdata"
 
 [deps]
 
-source_file="res://LegacyCyborg2Condense-G3B4q.otf"
-dest_files=["res://.godot/imported/LegacyCyborg2Condense-G3B4q.otf-97bf3ff1401970773ea149413a71ade2.fontdata"]
+source_file="res://menus/LegacyCyborg2Condense-G3B4q.otf"
+dest_files=["res://.godot/imported/LegacyCyborg2Condense-G3B4q.otf-a64bc4ed433972a6e53b9d34947372e6.fontdata"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dr4da0flh1lro"
-path="res://.godot/imported/Telematic-BL5aV.ttf-48a46d6a77e1048c649a10cfa36443a9.fontdata"
+path="res://.godot/imported/Telematic-BL5aV.ttf-e6b4222bc2e28be845e51732a63a2e8d.fontdata"
 
 [deps]
 
-source_file="res://Telematic-BL5aV.ttf"
-dest_files=["res://.godot/imported/Telematic-BL5aV.ttf-48a46d6a77e1048c649a10cfa36443a9.fontdata"]
+source_file="res://menus/Telematic-BL5aV.ttf"
+dest_files=["res://.godot/imported/Telematic-BL5aV.ttf-e6b4222bc2e28be845e51732a63a2e8d.fontdata"]
 
 [params]
 
