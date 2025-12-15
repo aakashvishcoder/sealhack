@@ -1,12 +1,13 @@
-[gd_scene load_steps=26 format=3 uid="uid://dmdb2mk6xhv6d"]
+[gd_scene load_steps=27 format=3 uid="uid://dmdb2mk6xhv6d"]
 
-[ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
-[ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://Terrain (16x16).png" id="2_dopym"]
-[ext_resource type="Texture2D" uid="uid://dk2qoq5l8tqjj" path="res://Idle.png" id="3_ootpb"]
-[ext_resource type="FontFile" uid="uid://c1fufy63gjsik" path="res://Black Slider.ttf" id="4_v38iq"]
-[ext_resource type="PackedScene" uid="uid://nso3bmjv72x5" path="res://enemies.tscn" id="5_v8kj3"]
-[ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://astronaut.tscn" id="6_crycw"]
-[ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://astronaut2.tscn" id="7_i2041"]
+[ext_resource type="Script" uid="uid://b1cjkte3lqtnq" path="res://menus/level_1.gd" id="1_5vlv3"]
+[ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://menus/space.png" id="1_jwv3a"]
+[ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://menus/Terrain (16x16).png" id="2_dopym"]
+[ext_resource type="Texture2D" uid="uid://dk2qoq5l8tqjj" path="res://menus/Idle.png" id="3_ootpb"]
+[ext_resource type="FontFile" uid="uid://c1fufy63gjsik" path="res://menus/Black Slider.ttf" id="4_v38iq"]
+[ext_resource type="PackedScene" uid="uid://nso3bmjv72x5" path="res://menus/enemies.tscn" id="5_v8kj3"]
+[ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://menus/astronaut.tscn" id="6_crycw"]
+[ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://menus/astronaut2.tscn" id="7_i2041"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ootpb"]
 texture = ExtResource("2_dopym")
@@ -206,7 +207,9 @@ size = Vector2(29, 6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycv2e"]
 size = Vector2(28, 7)
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_5vlv3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1

@@ -1,7 +1,7 @@
 {
-	"questions": ["What is the answer?"],
+	"questions": ["What is the time complexity of binary search on a sorted array?"],
 	"question_types": ["Computer Science", "Math"],
-	"correct_answer": [1],
-	"answer_choices": [["1","2","3","4"], ["2","3","4","5"], ["3","4","5","6"]],
+	"correct_answer": [2],
+	"answer_choices": [["A. O(n)","B. O(log n)","C. O(n log n)","D. O(1)"], ["2","3","4","5"], ["3","4","5","6"]],
 	"clues": ["a","b","c","d"]
 }

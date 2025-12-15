@@ -4,6 +4,7 @@ var clue: String = ""
 var random_index: int = 0
 var question: String = ""
 var number_of_terminals: int = 0
+var astronauts: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

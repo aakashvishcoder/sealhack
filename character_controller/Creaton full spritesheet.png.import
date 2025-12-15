@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2vac7et5i1nb"
-path="res://.godot/imported/Creaton full spritesheet.png-95ad7ae0925ffb52e15e6720c325ff23.ctex"
+path="res://.godot/imported/Creaton full spritesheet.png-3b122dba44c13311ecba8433e5211b4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Creaton full spritesheet.png"
-dest_files=["res://.godot/imported/Creaton full spritesheet.png-95ad7ae0925ffb52e15e6720c325ff23.ctex"]
+source_file="res://character_controller/Creaton full spritesheet.png"
+dest_files=["res://.godot/imported/Creaton full spritesheet.png-3b122dba44c13311ecba8433e5211b4a.ctex"]
 
 [params]
 
