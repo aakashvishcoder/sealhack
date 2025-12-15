@@ -304,6 +304,7 @@ z_index = -1
 position = Vector2(944, 444.00003)
 scale = Vector2(6.6800003, 5.12)
 script = ExtResource("4_q6r6c")
+terminal_path = "res://terminal/terminal.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_q6r6c")

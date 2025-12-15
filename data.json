@@ -1,20 +1,7 @@
 {
-	"1": {
-		"question_type": "Computer Science",
-		"clue": "aushduoashuidhas",
-		"correct_answer": "asdj",
-		"answer_choice_1": "asdj",
-		"answer_choice_2": "cd",
-		"answer_choice_3": "bd",
-		"answer_choice_4": "asd",
-	},
-	"2": {
-		"question_type": "Computer Science",
-		"clue": "aushduoashuidhas",
-		"correct_answer": "asdj",
-		"answer_choice_1": "asdj",
-		"answer_choice_2": "cd",
-		"answer_choice_3": "bd",
-		"answer_choice_4": "asd",
-	},
+	"questions": ["What is the answer?"],
+	"question_types": ["Computer Science", "Math"],
+	"correct_answer": [1],
+	"answer_choices": [["1","2","3","4"], ["2","3","4","5"], ["3","4","5","6"]],
+	"clues": ["a","b","c","d"]
 }
