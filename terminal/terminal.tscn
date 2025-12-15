@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn4q4w63ip474"]
+[gd_scene load_steps=4 format=3 uid="uid://dn4q4w63ip474"]
 
 [ext_resource type="Script" uid="uid://dxibu4wtj3el1" path="res://terminal/terminal.gd" id="1_l3hco"]
 [ext_resource type="Script" uid="uid://cvwed1d0n7xlh" path="res://terminal/question.gd" id="2_cgvah"]
+[ext_resource type="FontFile" uid="uid://q3h3frc87nrm" path="res://menus/American Captain.ttf" id="2_osw5p"]
 
 [node name="Terminal" type="Node2D"]
 position = Vector2(605, 569)
@@ -17,10 +18,12 @@ offset_bottom = -214.0
 text = "Answer Choice 1"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = -605.0
-offset_top = -569.0
-offset_right = 547.0
-offset_bottom = -344.0
+offset_left = -200.0
+offset_top = -477.0
+offset_right = 952.0
+offset_bottom = -252.0
+theme_override_fonts/normal_font = ExtResource("2_osw5p")
+theme_override_font_sizes/normal_font_size = 30
 text = "Dasjdioajsiodjoiajsodj"
 script = ExtResource("2_cgvah")
 

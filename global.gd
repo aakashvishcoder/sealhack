@@ -6,6 +6,7 @@ var question: String = ""
 var number_of_terminals: int = 0
 var astronauts: int = 0
 var completed_terminals = {}
+var password = "algorithm"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
