@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=11 format=4 uid="uid://oj72yckt2eps"]
 
 [ext_resource type="Script" uid="uid://djuntn1hlm6so" path="res://character_controller/character_body_2d.gd" id="1_0e48y"]
@@ -5,6 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://cr1ptepfalbj7" path="res://character_controller/icon.svg" id="3_epypp"]
 [ext_resource type="Texture2D" uid="uid://cy02acekjcnk0" path="res://character_controller/133536268704078752.jpg" id="4_0hol4"]
 [ext_resource type="Script" uid="uid://de4dpqfnxl4nr" path="res://character_controller/terminal_Script.gd" id="4_q6r6c"]
+=======
+[gd_scene load_steps=27 format=4 uid="uid://oj72yckt2eps"]
+
+[ext_resource type="Script" uid="uid://djuntn1hlm6so" path="res://character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cr1ptepfalbj7" path="res://icon.svg" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://b2vac7et5i1nb" path="res://Creaton full spritesheet.png" id="3_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://cy02acekjcnk0" path="res://133536268704078752.jpg" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://de4dpqfnxl4nr" path="res://terminal_Script.gd" id="4_q6r6c"]
+[ext_resource type="AudioStream" uid="uid://b3qu8blbpi7t" path="res://backgroundMusicEffect.mp3" id="6_kdubu"]
+[ext_resource type="Script" uid="uid://0on84iuk8d0" path="res://audio_stream_player_2d.gd" id="7_d21ai"]
+>>>>>>> b5c3fc8fc768eb53303d765e7f37178721484347
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 resource_name = "default"
@@ -142,6 +154,123 @@ texture = ExtResource("3_epypp")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0hol4")
 
+<<<<<<< HEAD
+=======
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flf07"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("3_q6r6c")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ir8iy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2bti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta5nu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flf07")
+}],
+"loop": true,
+"name": &"dashing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0ka3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h7mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nr8wp")
+}],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}],
+"loop": true,
+"name": &"standing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj586")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d7sh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}],
+"loop": false,
+"name": &"walking",
+"speed": 8.0
+}]
+
+>>>>>>> b5c3fc8fc768eb53303d765e7f37178721484347
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtcfe"]
 size = Vector2(20, 113)
 
@@ -164,9 +293,26 @@ script = ExtResource("1_0e48y")
 position = Vector2(1, -2.38419e-07)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_wtcfe")
+<<<<<<< HEAD
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(2, 0)
+=======
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+texture_filter = 1
+scale = Vector2(1, 0.98237634)
+sprite_frames = SubResource("SpriteFrames_ir8iy")
+animation = &"walking"
+frame = 5
+frame_progress = 1.0
+animation = &"jumping"
+autoplay = "jumping"
+frame_progress = 0.3428235
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 0.5093994)
+scale = Vector2(1, 0.9999996)
+>>>>>>> b5c3fc8fc768eb53303d765e7f37178721484347
 shape = SubResource("RectangleShape2D_wtcfe")
 
 [node name="playerTriggerArea" type="Area2D" parent="Player"]
@@ -189,6 +335,10 @@ shape = SubResource("RectangleShape2D_q6r6c")
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 scale = Vector2(0.00520258, 0.00931222)
 texture = ExtResource("4_0hol4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Area2D"]
+stream = ExtResource("6_kdubu")
+script = ExtResource("7_d21ai")
 
 [connection signal="area_entered" from="Player/playerTriggerArea" to="Area2D" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player/playerTriggerArea" to="Area2D" method="_on_player_trigger_area_area_exited"]
