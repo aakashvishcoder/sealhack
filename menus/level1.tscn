@@ -207,7 +207,6 @@ size = Vector2(29, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycv2e"]
 size = Vector2(28, 7)
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_8cre0")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
