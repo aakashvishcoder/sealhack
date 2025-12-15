@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://d20l6nrjnfehg"]
+
+[ext_resource type="FontFile" uid="uid://btolsrv7itynn" path="res://NauSea-yeMm.ttf" id="1_fcngl"]
+[ext_resource type="FontFile" uid="uid://q3h3frc87nrm" path="res://American Captain.ttf" id="2_ag8e4"]
+[ext_resource type="FontFile" uid="uid://mp0nq2glwr6f" path="res://Kitchen Delight Script.ttf" id="3_ag8e4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 800.0
+offset_right = 1153.0
+offset_bottom = 648.0
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 380.0
+offset_right = 800.0
+offset_bottom = 647.0
+
+[node name="Panel3" type="Panel" parent="."]
+offset_right = 380.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 89.0
+offset_right = 1080.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.954689, 0.285745, 0.495956, 1)
+theme_override_fonts/font = ExtResource("1_fcngl")
+theme_override_font_sizes/font_size = 34
+text = "Ready to play??? FIRST, you're going to wanna know how"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 80.0
+offset_top = 141.0
+offset_right = 197.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(0.453702, 0.48388, 4.81307e-07, 1)
+theme_override_fonts/font = ExtResource("2_ag8e4")
+theme_override_font_sizes/font_size = 60
+text = "RULES / HOW TO PLAY"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 90.0
+offset_top = 207.0
+offset_right = 830.0
+offset_bottom = 507.0
+theme_override_fonts/font = ExtResource("3_ag8e4")
+theme_override_font_sizes/font_size = 30
