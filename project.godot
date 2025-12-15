@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="sealhack"
+<<<<<<< Updated upstream
+run/main_scene="uid://oj72yckt2eps"
+=======
 run/main_scene="uid://bj2sqsrfqhkh1"
-config/features=PackedStringArray("4.4", "Forward Plus")
+>>>>>>> Stashed changes
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://starfield/icon.svg"
 
 [autoload]

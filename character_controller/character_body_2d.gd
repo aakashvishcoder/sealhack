@@ -52,10 +52,31 @@ func _physics_process(delta: float) -> void:
 	
 	velocity.x = 0
 	if Input.is_action_pressed("right"):
+		if currentHorizontalSpeed == baseHorizontalSpeed * dashMultiplier:
+			$AnimatedSprite2D.scale.x = 1
+			$AnimatedSprite2D.play("dashing")
+		elif velocity.y >= 0:
+			$AnimatedSprite2D.scale.x = 1
+			$AnimatedSprite2D.play("walking")
 		velocity.x = currentHorizontalSpeed * (delta * 100)
 	elif Input.is_action_pressed("left"):
+		if currentHorizontalSpeed == baseHorizontalSpeed * dashMultiplier:
+			$AnimatedSprite2D.scale.x = -1
+			$AnimatedSprite2D.play("dashing")
+		elif velocity.y >= 0:
+			$AnimatedSprite2D.scale.x = -1
+			$AnimatedSprite2D.play("walking")
 		velocity.x = -currentHorizontalSpeed * (delta * 100)
+		
+	if not is_on_floor() and velocity.y <= 0:
+		$AnimatedSprite2D.play("jumping")
+	elif velocity.x == 0:
+		$AnimatedSprite2D.scale.x = 1
+		$AnimatedSprite2D.play("default")
+	
 	if Input.is_action_pressed("left") and Input.is_action_pressed("right"):
+		$AnimatedSprite2D.scale.x = 1
+		$AnimatedSprite2D.play("default")
 		velocity.x = 0
 		
 		
@@ -69,13 +90,12 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("up"):
 		if is_on_floor():
 			#regular jump
-			print("regular jump")
 			jumpTimer = Time.get_ticks_msec()
 			velocity.y = jumpForce
 			jumpsLeft -= 1
 			
 		elif Input.is_action_just_pressed("up") and jumpsLeft > 0:
-			print("special jump")
+			#special jump
 			jumpTimer = Time.get_ticks_msec()
 			velocity.y = jumpForce
 			jumpsLeft -= 1
@@ -89,8 +109,8 @@ func _physics_process(delta: float) -> void:
 	#if jump is done
 	if jumpTimer < Time.get_ticks_msec() - airTime:
 		velocity.y += get_gravity().y * delta
-		
 
+		
 	move_and_slide()
 
 #func _process(delta: float) -> void:
