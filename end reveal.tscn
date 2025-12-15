@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=3 uid="uid://cqj6nmlqgroby"]
+
+[ext_resource type="Texture2D" uid="uid://cmsk4ahthy04u" path="res://menus/menu 8.png" id="1_53dlw"]
+[ext_resource type="Script" uid="uid://dgtd2o2ejqrhc" path="res://end_reveal.gd" id="1_hijce"]
+[ext_resource type="Texture2D" uid="uid://b1mo2vyburhf1" path="res://menus/menu 7.png" id="2_hijce"]
+[ext_resource type="FontFile" uid="uid://btolsrv7itynn" path="res://NauSea-yeMm.ttf" id="3_l4yym"]
+[ext_resource type="FontFile" uid="uid://dr4da0flh1lro" path="res://menus/Telematic-BL5aV.ttf" id="4_kset2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r422u"]
+texture = ExtResource("1_53dlw")
+modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jqg7u"]
+texture = ExtResource("2_hijce")
+modulate_color = Color(0.658824, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53dlw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0, 0.8, 0.8, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hijce")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 579.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_r422u")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 579.0
+offset_right = 1145.0
+offset_bottom = 647.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jqg7u")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 102.0
+offset_top = 115.0
+offset_right = 1094.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0.8, 0, 1)
+theme_override_fonts/font = ExtResource("3_l4yym")
+theme_override_font_sizes/font_size = 50
+text = "Well done, you completed the level! "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 127.0
+offset_top = 183.0
+offset_right = 1078.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(0.772549, 0.901961, 0, 1)
+theme_override_fonts/font = ExtResource("4_kset2")
+theme_override_font_sizes/font_size = 40
+text = "The unidentifiable object was..."
+
+[node name="Button" type="Button" parent="."]
+offset_left = 354.0
+offset_top = 255.0
+offset_right = 808.0
+offset_bottom = 366.0
+theme_override_colors/font_disabled_color = Color(0.960784, 0.541176, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.945098, 0.52549, 0, 1)
+theme_override_colors/font_hover_color = Color(0.862745, 0.552941, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0.866667, 0.576471, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.837575, 0.469922, 0.137525, 1)
+theme_override_colors/icon_hover_color = Color(0.878431, 0.541176, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.890196, 0.556863, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.894118, 0.537255, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.890196, 0.541176, 0, 1)
+theme_override_colors/font_outline_color = Color(0.890196, 0.541176, 0, 1)
+theme_override_colors/font_color = Color(0.921569, 0.52549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.878431, 0.560784, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.835294, 0.52549, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_53dlw")
+text = "Lets see!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
