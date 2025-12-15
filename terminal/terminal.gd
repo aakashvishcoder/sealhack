@@ -3,6 +3,7 @@ extends Node2D
 @export var json_file_path: String = "res://data.json"
 @export var main_scene_file_path: String = ""
 @export var clue_scene_file_path: String = ""
+@export var terminal_id: String = "Terminal1"
 @onready var my_button_1 = $Button2
 @onready var my_button_2 = $Button3
 @onready var my_button_3 = $Button4
@@ -59,21 +60,29 @@ func _process(delta: float) -> void:
 func _on_button_2_button_down() -> void:
 	if file_path_1 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
+		print(Global.number_of_terminals)
+		Global.completed_terminals[terminal_id] = true  
 	get_tree().change_scene_to_file(file_path_1)
 
 func _on_button_3_button_down() -> void:
 	if file_path_2 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
+		print(Global.number_of_terminals)
+		Global.completed_terminals[terminal_id] = true  
 	get_tree().change_scene_to_file(file_path_2)
 
 func _on_button_4_button_down() -> void:
 	if file_path_3 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
+		print(Global.number_of_terminals)
+		Global.completed_terminals[terminal_id] = true 
 	get_tree().change_scene_to_file(file_path_3)
 
 func _on_button_5_button_down() -> void:
 	if file_path_4 == clue_scene_file_path:
 		Global.number_of_terminals -= 1
+		print(Global.number_of_terminals)
+		Global.completed_terminals[terminal_id] = true 
 	get_tree().change_scene_to_file(file_path_4)
 
 # exporting the clue to the clue scene
@@ -98,7 +107,12 @@ var collidingWithPlayer = false
 
 func on_Player_Collide():
 	if Input.is_action_just_pressed("open Terminal"):
-		print("opened the terminal")
+		if Global.completed_terminals.has(terminal_id):
+			print("This terminal is already completed!")
+			return
+		else:
+			print("opened the terminal")
+			# open the terminal scene as before
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	collidingWithPlayer = true
