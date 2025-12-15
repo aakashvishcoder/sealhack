@@ -250,6 +250,7 @@ position = Vector2(929, 539)
 
 [node name="Area2D+1" type="Area2D" parent="."]
 position = Vector2(929, 539)
+script = ExtResource("8_5vlv3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D+1"]
 position = Vector2(-818, 49)
@@ -306,3 +307,11 @@ shape = SubResource("RectangleShape2D_nauge")
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D+1"]
 position = Vector2(-193, -429.5)
 shape = SubResource("RectangleShape2D_ycv2e")
+
+[node name="Area2D+3" type="Area2D" parent="."]
+position = Vector2(929, 539)
+script = ExtResource("9_f52xe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D+3"]
+position = Vector2(107, -473)
+shape = SubResource("RectangleShape2D_tj4i1")
