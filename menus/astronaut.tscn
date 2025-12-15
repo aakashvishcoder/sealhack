@@ -64,6 +64,7 @@ autoplay = "default"
 frame_progress = 0.161515
 
 [node name="Area2D+2" type="Area2D" parent="AnimatedSprite2D"]
+script = ExtResource("2_l76db")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D+2"]
 position = Vector2(-22.1277, -0.0695926)
