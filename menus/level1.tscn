@@ -1,6 +1,10 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=26 format=3 uid="uid://dmdb2mk6xhv6d"]
+=======
+[gd_scene load_steps=27 format=3 uid="uid://dmdb2mk6xhv6d"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://jm70a5gng5u4" path="res://space.png" id="1_jwv3a"]
 [ext_resource type="Texture2D" uid="uid://ctadutkyqa7ju" path="res://Terrain (16x16).png" id="2_dopym"]
@@ -9,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://nso3bmjv72x5" path="res://enemies.tscn" id="5_v8kj3"]
 [ext_resource type="PackedScene" uid="uid://dbq1374eb26so" path="res://astronaut.tscn" id="6_crycw"]
 [ext_resource type="PackedScene" uid="uid://cyx4fjursuw8y" path="res://astronaut2.tscn" id="7_i2041"]
+<<<<<<< Updated upstream
 =======
 =======
 >>>>>>> Stashed changes
@@ -29,6 +34,9 @@
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+[ext_resource type="Texture2D" uid="uid://crxfvj2f3aroq" path="res://door.png" id="8_xy4tn"]
 >>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ootpb"]
@@ -351,6 +359,7 @@ shape = SubResource("RectangleShape2D_nauge")
 position = Vector2(-193, -429.5)
 shape = SubResource("RectangleShape2D_ycv2e")
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 
 [node name="Area2D+3" type="Area2D" parent="."]
@@ -386,4 +395,11 @@ position = Vector2(251, 575)
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(1112, 79.625)
+scale = Vector2(0.318471, 0.207944)
+texture = ExtResource("8_xy4tn")
 >>>>>>> Stashed changes

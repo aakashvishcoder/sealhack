@@ -73,6 +73,7 @@ shape = SubResource("RectangleShape2D_qbnvs")
 position = Vector2(-8, -468)
 scale = Vector2(0.84375, 0.875)
 sprite_frames = SubResource("SpriteFrames_u1n0p")
+autoplay = "default"
 frame_progress = 0.990283
 
 [node name="Area2D+2" type="Area2D" parent="AnimatedSprite2D2"]
@@ -80,5 +81,4 @@ script = ExtResource("2_ry2uk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D2/Area2D+2"]
 position = Vector2(-59.2593, -2.71429)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ry2uk")
