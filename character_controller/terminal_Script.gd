@@ -6,6 +6,7 @@ var collidingWithPlayer = false
 func on_Player_Collide():
 	if Input.is_action_just_pressed("open Terminal"):
 		print("opened the terminal")
+		$AudioStreamPlayer2D.play()
 
 
 
