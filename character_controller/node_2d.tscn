@@ -161,7 +161,7 @@ position = Vector2(605, 312)
 script = ExtResource("1_0e48y")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(0.9999995, -2.3841858e-07)
+position = Vector2(1, -2.38419e-07)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_wtcfe")
 
@@ -173,13 +173,13 @@ shape = SubResource("RectangleShape2D_wtcfe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/playerTriggerArea"]
 position = Vector2(0, -0.5)
-scale = Vector2(8.5999975, 1)
+scale = Vector2(8.6, 1)
 shape = SubResource("RectangleShape2D_kdubu")
 
 [node name="Area2D" type="Area2D" parent="."]
 z_index = -1
-position = Vector2(944, 444.00003)
-scale = Vector2(6.6800003, 5.12)
+position = Vector2(944, 444)
+scale = Vector2(6.68, 5.12)
 script = ExtResource("4_q6r6c")
 terminal_path = "res://terminal/terminal.tscn"
 
@@ -187,7 +187,7 @@ terminal_path = "res://terminal/terminal.tscn"
 shape = SubResource("RectangleShape2D_q6r6c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-scale = Vector2(0.005202579, 0.009312216)
+scale = Vector2(0.00520258, 0.00931222)
 texture = ExtResource("4_0hol4")
 
 [connection signal="area_entered" from="Player/playerTriggerArea" to="Area2D" method="_on_area_2d_area_entered"]
