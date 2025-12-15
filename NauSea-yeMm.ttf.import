@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://btolsrv7itynn"
+uid="uid://de3vvkf3xm4jr"
 path="res://.godot/imported/NauSea-yeMm.ttf-40e7376e848f0520068d08f442a5afcd.fontdata"
 
 [deps]
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

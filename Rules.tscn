@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d20l6nrjnfehg"]
+[gd_scene load_steps=13 format=3 uid="uid://dtw48qlfntf1b"]
 
 [ext_resource type="Script" uid="uid://crw3a25jgt23v" path="res://rules.gd" id="1_eojom"]
 [ext_resource type="FontFile" uid="uid://btolsrv7itynn" path="res://NauSea-yeMm.ttf" id="1_fcngl"]

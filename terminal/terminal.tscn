@@ -18,20 +18,20 @@ offset_bottom = -214.0
 text = "Answer Choice 1"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = -200.0
-offset_top = -477.0
-offset_right = 952.0
-offset_bottom = -252.0
+offset_left = -319.0
+offset_top = -479.0
+offset_right = 833.0
+offset_bottom = -254.0
 theme_override_fonts/normal_font = ExtResource("2_osw5p")
 theme_override_font_sizes/normal_font_size = 30
 text = "Dasjdioajsiodjoiajsodj"
 script = ExtResource("2_cgvah")
 
 [node name="Button3" type="Button" parent="."]
-offset_left = -448.0
-offset_top = -170.0
-offset_right = -246.61539
-offset_bottom = -82.0
+offset_left = -451.0
+offset_top = -120.0
+offset_right = -249.61539
+offset_bottom = -32.0
 text = "Answer Choice 1"
 
 [node name="Button4" type="Button" parent="."]
@@ -42,10 +42,10 @@ offset_bottom = -210.0
 text = "Answer Choice 1"
 
 [node name="Button5" type="Button" parent="."]
-offset_left = 203.0
-offset_top = -175.0
-offset_right = 404.38464
-offset_bottom = -87.0
+offset_left = 206.0
+offset_top = -115.0
+offset_right = 407.38464
+offset_bottom = -27.0
 text = "Answer Choice 1"
 
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]

@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dr4da0flh1lro"
+uid="uid://dbmunfyyaboif"
 path="res://.godot/imported/Telematic-BL5aV.ttf-48a46d6a77e1048c649a10cfa36443a9.fontdata"
 
 [deps]
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true
