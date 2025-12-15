@@ -1,7 +1,48 @@
 {
-	"questions": ["What is the answer?"],
-	"question_types": ["Computer Science", "Math"],
-	"correct_answer": [1],
-	"answer_choices": [["1","2","3","4"], ["2","3","4","5"], ["3","4","5","6"]],
-	"clues": ["a","b","c","d"]
+  "questions": [
+	"What is the time complexity of binary search on a sorted array?",
+	"Which data structure uses the FIFO (First In, First Out) principle?",
+	"What does the term \"recursion\" refer to in programming?",
+	"What is the derivative of x^2?",
+	"Which number system is base 2?",
+	"Which of the following is NOT a programming paradigm?",
+	"Which symbol is commonly used for logical AND?",
+	"What does RAM stand for?",
+    "Which sorting algorithm has an average-case time complexity of O(n log n)?"
+  ],
+  "question_types": [
+	"Computer Science",
+	"Computer Science",
+	"Computer Science",
+	"Math",
+	"Computer Science",
+	"Computer Science",
+	"Computer Science",
+	"Computer Science",
+    "Computer Science"
+  ],
+  "correct_answer": [
+	2,
+	3,
+	2,
+	2,
+	4,
+	4,
+	3,
+	2,
+	3
+  ],
+  "answer_choices": [
+	["A. O(n)", "B. O(log n)", "C. O(n log n)", "D. O(1)"],
+	["A. Stack", "B. Tree", "C. Queue", "D. Graph"],
+	["A. Repeating a loop indefinitely", "B. A function calling itself", "C. A variable changing type", "D. Executing code in parallel"],
+	["A. x", "B. 2x", "C. x^3", "D. 2"],
+	["A. Decimal", "B. Hexadecimal", "C. Octal", "D. Binary"],
+	["A. Object-oriented", "B. Functional", "C. Procedural", "D. Relational"],
+	["A. ||", "B. !", "C. &&", "D. =="],
+	["A. Read Access Memory", "B. Random Access Memory", "C. Run Access Memory", "D. Rapid Access Module"],
+	["A. Bubble sort", "B. Insertion sort", "C. Merge sort", "D. Selection sort"]
+  ],
+  "clues": ["T", "A", "M", "O", "L", "R", "G", "I", "H"],
+  "unscrambled_word": "ALGORITHM"
 }
