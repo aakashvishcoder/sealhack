@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://r75dhc0w2k28"]
+[gd_scene load_steps=15 format=3 uid="uid://r75dhc0w2k28"]
 
 [ext_resource type="Script" uid="uid://c2uq00na1ag6a" path="res://character_body_2d.gd" id="1_44cfe"]
 [ext_resource type="Texture2D" uid="uid://by12ha7m0leug" path="res://image.png" id="1_ghijl"]
@@ -75,6 +75,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ij6vw"]
 size = Vector2(56.0383, 44.0507)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44cfe"]
+size = Vector2(55.2019, 41.9241)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2.316, 2)
 script = ExtResource("1_44cfe")
@@ -91,3 +94,11 @@ autoplay = "Running"
 position = Vector2(1.40329, -1.375)
 scale = Vector2(0.77436, 0.822916)
 shape = SubResource("RectangleShape2D_ij6vw")
+
+[node name="Area2D+1" type="Area2D" parent="."]
+position = Vector2(1.40329, -1.375)
+scale = Vector2(0.77436, 0.822916)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D+1"]
+position = Vector2(1.25458, 0.151898)
+shape = SubResource("RectangleShape2D_44cfe")
