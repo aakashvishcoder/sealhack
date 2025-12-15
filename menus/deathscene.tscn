@@ -1,3 +1,132 @@
-[gd_scene load_steps=0 format=3 uid="uid://b1mj8phvnyy4u"]
+[gd_scene load_steps=15 format=3 uid="uid://b1mj8phvnyy4u"]
+
+[ext_resource type="Script" uid="uid://iw0icg7kub04" path="res://menus/deathscene.gd" id="1_fk4kt"]
+[ext_resource type="FontFile" uid="uid://c1fufy63gjsik" path="res://menus/Black Slider.ttf" id="2_1sjna"]
+[ext_resource type="Texture2D" uid="uid://dokt5fj6g2o1n" path="res://menus/spacee.png" id="2_vbvmd"]
+[ext_resource type="FontFile" uid="uid://q3h3frc87nrm" path="res://menus/American Captain.ttf" id="3_8v30l"]
+[ext_resource type="Texture2D" uid="uid://dpoyqjtcuy3ap" path="res://menus/spacee2.png" id="3_rubvn"]
+[ext_resource type="Texture2D" uid="uid://ci3w7k52auf11" path="res://menus/spacee3.png" id="4_rnk17"]
+[ext_resource type="Texture2D" uid="uid://bvnwja78dodbx" path="res://menus/spacee4.png" id="5_0u2v1"]
+[ext_resource type="AudioStream" uid="uid://nr8nmjux275x" path="res://menus/sound effect.mp3" id="8_rubvn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gmvm8"]
+texture = ExtResource("2_vbvmd")
+modulate_color = Color(0.458824, 0.733333, 0.458824, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i4quk"]
+texture = ExtResource("3_rubvn")
+modulate_color = Color(0.536789, 0.670817, 0.00898813, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f3qh3"]
+texture = ExtResource("4_rnk17")
+modulate_color = Color(0.564962, 0.564962, 0.564962, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q34ri"]
+texture = ExtResource("5_0u2v1")
+modulate_color = Color(0.493545, 0.493546, 0.493546, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_birob"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.662341, 0.891642, 7.70092e-07, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbvmd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.188235, 0.8, 0.8, 1)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_fk4kt")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 589.0
+offset_bottom = 349.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gmvm8")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 589.0
+offset_right = 1152.0
+offset_bottom = 349.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_i4quk")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_top = 349.0
+offset_right = 590.0
+offset_bottom = 649.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3qh3")
+
+[node name="Panel4" type="Panel" parent="."]
+offset_left = 590.0
+offset_top = 349.0
+offset_right = 1150.0
+offset_bottom = 647.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_q34ri")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 236.0
+offset_right = 865.0
+offset_bottom = 384.0
+theme_override_colors/font_disabled_color = Color(0.729412, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.760784, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0.729412, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.705882, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.717647, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.760784, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.709804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.733333, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.745098, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.905882, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_1sjna")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_birob")
+text = "Back to the level!"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 409.0
+offset_right = 865.0
+offset_bottom = 570.0
+theme_override_colors/font_disabled_color = Color(0, 0.501961, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0.568627, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.552941, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0.564706, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0.584314, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0.576471, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.564706, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0.552941, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0.537255, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.545098, 0, 1)
+theme_override_colors/font_color = Color(0, 0.580392, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0.580392, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.584314, 0, 1)
+theme_override_fonts/font = ExtResource("2_1sjna")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_vbvmd")
+text = "To the main menu!"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 235.0
+offset_top = 103.0
+offset_right = 938.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0, 0.662745, 0, 1)
+theme_override_fonts/font = ExtResource("3_8v30l")
+theme_override_font_sizes/font_size = 80
+text = "You died! But do you quit?"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_rubvn")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
